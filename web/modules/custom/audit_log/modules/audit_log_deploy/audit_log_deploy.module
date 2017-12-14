@@ -1,0 +1,28 @@
+<?php
+
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+
+/**
+ * Implements hook_entity_base_field_info().
+ */
+function audit_log_deploy_entity_base_field_info(EntityTypeInterface $entity_type) {
+  if ($entity_type->id() == 'audit_log') {
+    $fields = [];
+    $fields['workspace_id'] = BaseFieldDefinition::create('entity_reference')
+      ->setLabel(t('Workspace'))
+      ->setDescription(t('The related workspace.'))
+      ->setSetting('target_type', 'workspace');
+
+    return $fields;
+  }
+}
+
+/**
+ * Implements hook_audit_log_save_alter().
+ */
+function audit_log_deploy_audit_log_save_alter(&$values, $event) {
+  if (!empty($event->getEntity()->workspace)) {
+    $values['workspace_id'] = $event->getEntity()->workspace->target_id;
+  }
+}
