@@ -1,4 +1,7 @@
 module:
+  audit_log: 0
+  audit_log_deploy: 0
+  audit_log_rest: 0
   automated_cron: 0
   block: 0
   breakpoint: 0
@@ -7,10 +10,12 @@ module:
   comment: 0
   config: 0
   config_direct_save: 0
+  conflict: 0
   contact: 0
   contextual: 0
   datetime: 0
   dblog: 0
+  deploy: 0
   dynamic_page_cache: 0
   editor: 0
   field: 0
@@ -20,15 +25,22 @@ module:
   help: 0
   history: 0
   image: 0
+  key_value: 0
   link: 0
   menu_ui: 0
+  migrate: 0
+  migrate_drupal: 0
+  multiversion: 0
   node: 0
   options: 0
   page_cache: 0
   path: 0
   quickedit: 0
   rdf: 0
+  replication: 0
+  rest: 0
   search: 0
+  serialization: 0
   shortcut: 0
   simple_block: 0
   system: 0
@@ -41,6 +53,7 @@ module:
   views_ui: 0
   menu_link_content: 1
   views: 10
+  workspace: 10
   standard: 1000
 theme:
   stable: 0
