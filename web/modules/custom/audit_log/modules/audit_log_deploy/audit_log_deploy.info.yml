@@ -1,0 +1,7 @@
+name: Audit Log Deploy
+type: module
+core: 8.x
+package: 'Audit Log'
+dependencies:
+  - deploy
+  - audit_log
