@@ -21,6 +21,9 @@ if [ -f "config/system.site.yml" ] ; then
   terminus -n drush "$TERMINUS_SITE.dev" -- config-import --yes
 fi
 
+# Entity update.
+terminus -n drush "$TERMINUS_SITE.dev" -- entup --yes
+
 # Delete old multidev environments associated with a PR that has been
 # merged or closed.
 terminus -n build:env:delete:pr "$TERMINUS_SITE" --yes

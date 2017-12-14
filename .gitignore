@@ -55,9 +55,10 @@ web/sites/default/files
 
 # Pantheon commits a settings.php for environment-specific settings.
 # Place local settings in settings.local.php
-web/sites/*/settings.local.php
+# add check to don't use it on pantheon.
+# web/sites/*/settings.local.php
 web/sites/*/services*.yml
-!web/sites/*/services.pantheon.*.yml 
+!web/sites/*/services.pantheon.*.yml
 
 # Ignore SimpleTest multi-site environment.
 web/sites/simpletest
@@ -102,3 +103,7 @@ Thumbs.db
 
 # Things in the core directory that Drupal 8 commits in the repository.
 !web/core/**/*.gz
+
+# Docker and idea staff
+/.idea
+/.docker-sync
