@@ -1,5 +1,0 @@
-services:
-  audit_log.event_subscriber.workspace:
-    class: Drupal\audit_log_deploy\EventSubscriber\Workspace
-    tags:
-      - { name: audit_log_event_subscriber }

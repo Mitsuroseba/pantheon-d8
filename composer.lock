@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "242308c2cabc84ee14844c68318954ec",
+    "content-hash": "1b9dd96f8d60bf921db0a96158c2dd72",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2819,6 +2819,43 @@
                 "xml"
             ],
             "time": "2017-09-04T12:26:28+00:00"
+        },
+        {
+            "name": "mitsuroseba/audit_log",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/propeopleua/audit_log.git",
+                "reference": "3406f85f57daf78e276edb209ac6fb86b07ed4cc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/propeopleua/audit_log/zipball/3406f85f57daf78e276edb209ac6fb86b07ed4cc",
+                "reference": "3406f85f57daf78e276edb209ac6fb86b07ed4cc",
+                "shasum": ""
+            },
+            "require-dev": {
+                "behat/mink-selenium2-driver": "^1.3",
+                "bex/behat-screenshot": "^1.2",
+                "cweagans/composer-patches": "^1.6",
+                "drupal/coder": "^8.2",
+                "drupal/drupal-extension": "master-dev",
+                "phpmd/phpmd": "^2.6",
+                "phpmetrics/phpmetrics": "^2.3"
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Yuriy Boychenko",
+                    "email": "yuboychenko@gmail.com"
+                },
+                {
+                    "name": "Valeriy Garzha",
+                    "email": "valeriy.garzha@ffwagency.com"
+                }
+            ],
+            "time": "2017-12-15T10:57:36+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -7594,7 +7631,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/deploy": 10,
-        "drupal/simple_block": 10
+        "drupal/simple_block": 10,
+        "mitsuroseba/audit_log": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
