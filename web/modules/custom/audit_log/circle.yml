@@ -1,5 +1,0 @@
-deployment:
-  prod:
-    branch: /.*/
-    commands:
-      - php -f ./scripts/wodby.php

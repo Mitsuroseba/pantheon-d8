@@ -21,6 +21,7 @@
     "drupal/deploy": "^1.0@beta",
     "drupal/simple_block": "^1.0@beta",
     "drush/drush": "~8",
+    "mitsuroseba/audit_log": "dev-8.x-1.x",
     "rvtraveller/qs-composer-installer": "^1.1",
     "webflo/drupal-core-strict": "^8"
   },
