@@ -1,0 +1,7 @@
+name: Pantheon
+type: profile
+description: 'Default pantheon profile'
+core: 8.x
+distribution:
+  name: Pantheon
+config_install: true
