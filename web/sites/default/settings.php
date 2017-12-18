@@ -16,13 +16,10 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  */
 include __DIR__ . "/settings.pantheon.php";
 
-/**
- * Place the config directory outside of the Drupal root.
- */
-$config_directories = array(
-  CONFIG_SYNC_DIRECTORY => dirname(DRUPAL_ROOT) . '/config',
-);
+// Get profile.
+$site_profile = basename(glob(DRUPAL_ROOT . '/profiles/custom/pantheon', GLOB_ONLYDIR)[0]);
 
+$config_directories = [CONFIG_SYNC_DIRECTORY => "profiles/$site_profile/config/sync"];
 /**
  * If there is a local settings file, then include it
  */
@@ -37,4 +34,4 @@ if (file_exists($local_settings)) {
  *
  * See: tests/installer-features/installer.feature
  */
-$settings['install_profile'] = 'pantheon';
+$settings['install_profile'] = $site_profile;
