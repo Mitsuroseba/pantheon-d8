@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e6a447f0784ab0dd5d6ee5b8388ac536",
+    "content-hash": "9e1e368a1ed045ec617d7b8e2c7dd7e0",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1829,6 +1829,11 @@
                 "symfony/phpunit-bridge": "~3.2.8"
             },
             "type": "drupal-core",
+            "extra": {
+                "patches_applied": {
+                    "#2788777-97: Allow a profile to be installed from existing config": "https://www.drupal.org/files/issues/2788777-97.patch"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Drupal\\Core\\": "lib/Drupal/Core",
@@ -2897,12 +2902,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/propeopleua/audit_log.git",
-                "reference": "3406f85f57daf78e276edb209ac6fb86b07ed4cc"
+                "reference": "a5848b4fceceab3a2e674ceabc8684cb42d4e98a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/propeopleua/audit_log/zipball/3406f85f57daf78e276edb209ac6fb86b07ed4cc",
-                "reference": "3406f85f57daf78e276edb209ac6fb86b07ed4cc",
+                "url": "https://api.github.com/repos/propeopleua/audit_log/zipball/a5848b4fceceab3a2e674ceabc8684cb42d4e98a",
+                "reference": "a5848b4fceceab3a2e674ceabc8684cb42d4e98a",
                 "shasum": ""
             },
             "require-dev": {
@@ -2926,7 +2931,7 @@
                     "email": "valeriy.garzha@ffwagency.com"
                 }
             ],
-            "time": "2017-12-15T10:57:36+00:00"
+            "time": "2017-12-18T09:59:07+00:00"
         },
         {
             "name": "nikic/php-parser",

@@ -72,6 +72,11 @@
     ]
   },
   "extra": {
+    "patches": {
+      "drupal/core": {
+        "#2788777-97: Allow a profile to be installed from existing config": "https://www.drupal.org/files/issues/2788777-97.patch"
+      }
+    },
     "installer-paths": {
       "web/core": ["type:drupal-core"],
       "web/modules/contrib/{$name}": ["type:drupal-module"],
