@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9e1e368a1ed045ec617d7b8e2c7dd7e0",
+    "content-hash": "ba5be08dfa44f24d48d811d59e063a13",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2898,16 +2898,16 @@
         },
         {
             "name": "mitsuroseba/audit_log",
-            "version": "dev-8.x-1.x",
+            "version": "1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/propeopleua/audit_log.git",
-                "reference": "a5848b4fceceab3a2e674ceabc8684cb42d4e98a"
+                "reference": "4c87d3e766b5729d733ee16abdca26996adc6093"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/propeopleua/audit_log/zipball/a5848b4fceceab3a2e674ceabc8684cb42d4e98a",
-                "reference": "a5848b4fceceab3a2e674ceabc8684cb42d4e98a",
+                "url": "https://api.github.com/repos/propeopleua/audit_log/zipball/4c87d3e766b5729d733ee16abdca26996adc6093",
+                "reference": "4c87d3e766b5729d733ee16abdca26996adc6093",
                 "shasum": ""
             },
             "require-dev": {
@@ -2920,7 +2920,6 @@
                 "phpmetrics/phpmetrics": "^2.3"
             },
             "type": "drupal-module",
-            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "Yuriy Boychenko",
@@ -2931,7 +2930,11 @@
                     "email": "valeriy.garzha@ffwagency.com"
                 }
             ],
-            "time": "2017-12-18T09:59:07+00:00"
+            "support": {
+                "source": "https://github.com/propeopleua/audit_log/tree/1.x",
+                "issues": "https://github.com/propeopleua/audit_log/issues"
+            },
+            "time": "2017-12-18T13:24:28+00:00"
         },
         {
             "name": "nikic/php-parser",
