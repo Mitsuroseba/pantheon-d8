@@ -5,4 +5,3 @@
 [![Dev Site pantheon-d8](https://img.shields.io/badge/site-pantheon_d8-blue.svg)](http://dev-pantheon-d8.pantheonsite.io/)
 
 Pantheon test site powered by composer.
-
