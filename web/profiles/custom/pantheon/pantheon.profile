@@ -25,5 +25,6 @@ function pantheon_setup_cleanup() {
     'audit_log_deploy',
     'audit_log_rest',
     'audit_log_ui',
+    'audit_log_example',
   ]);
 }
