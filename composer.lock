@@ -2299,6 +2299,77 @@
             }
         },
         {
+            "name": "drupal/relaxed",
+            "version": "1.0.0-beta6",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/relaxed",
+                "reference": "8.x-1.0-beta6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/relaxed-8.x-1.0-beta6.zip",
+                "reference": "8.x-1.0-beta6",
+                "shasum": "b4bb4497f6a6f0ae611bfb3c52eafe2fa8ce0992"
+            },
+            "require": {
+                "drupal/core": "^8.3",
+                "drupal/multiversion": "*",
+                "drupal/replication": "*",
+                "relaxedws/replicator": "dev-master"
+            },
+            "require-dev": {
+                "drupal/encrypt": "*",
+                "drupal/key": "*",
+                "drupal/workspace": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta6",
+                    "datestamp": "1512487384",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "amateescu",
+                    "homepage": "https://www.drupal.org/user/729614"
+                },
+                {
+                    "name": "damiankloip",
+                    "homepage": "https://www.drupal.org/user/1037976"
+                },
+                {
+                    "name": "dixon_",
+                    "homepage": "https://www.drupal.org/user/239911"
+                },
+                {
+                    "name": "jeqq",
+                    "homepage": "https://www.drupal.org/user/1427908"
+                },
+                {
+                    "name": "timmillwood",
+                    "homepage": "https://www.drupal.org/user/227849"
+                }
+            ],
+            "description": "Provides a RESTful API that exposes all content entities over UUID endpoints.",
+            "homepage": "https://www.drupal.org/project/relaxed",
+            "support": {
+                "source": "http://cgit.drupalcode.org/relaxed"
+            }
+        },
+        {
             "name": "drupal/replication",
             "version": "1.0.0-beta4",
             "source": {
@@ -3268,18 +3339,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/propeopleua/audit_log.git",
-                "reference": "88fc3f8083dfb91c295aaf2333c5aba71d0fe0ca"
+                "reference": "c8055fea3754b3bc533241ea80e9e4ec82384661"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/propeopleua/audit_log/zipball/88fc3f8083dfb91c295aaf2333c5aba71d0fe0ca",
-                "reference": "88fc3f8083dfb91c295aaf2333c5aba71d0fe0ca",
+                "url": "https://api.github.com/repos/propeopleua/audit_log/zipball/c8055fea3754b3bc533241ea80e9e4ec82384661",
+                "reference": "c8055fea3754b3bc533241ea80e9e4ec82384661",
                 "shasum": ""
             },
             "require": {
                 "drupal/better_exposed_filters": "^3.0@alpha",
                 "drupal/csv_serialization": "^1.0",
                 "drupal/deploy": "^1.0@beta",
+                "drupal/relaxed": "^1.0@beta",
                 "drupal/views_data_export": "^1.0@alpha"
             },
             "require-dev": {
@@ -3306,7 +3378,7 @@
                 "source": "https://github.com/propeopleua/audit_log/tree/1.x",
                 "issues": "https://github.com/propeopleua/audit_log/issues"
             },
-            "time": "2017-12-20T15:23:18+00:00"
+            "time": "2017-12-20T16:39:38+00:00"
         },
         {
             "name": "nikic/php-parser",
