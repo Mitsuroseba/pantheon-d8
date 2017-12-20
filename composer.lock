@@ -2265,6 +2265,9 @@
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "views-integration-problem": "https://www.drupal.org/files/issues/views-integration-2932024-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -8079,6 +8082,7 @@
     "stability-flags": {
         "drupal/coffee": 10,
         "drupal/deploy": 10,
+        "drupal/multiversion": 10,
         "drupal/simple_block": 10,
         "mitsuroseba/audit_log": 20
     },
