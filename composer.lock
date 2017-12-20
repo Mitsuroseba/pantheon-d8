@@ -3265,12 +3265,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/propeopleua/audit_log.git",
-                "reference": "beaa4a7dfe3e9bdc00d3f4d079293a11dd084de3"
+                "reference": "0e888d40f42135a115490baff6aa562c86298ab0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/propeopleua/audit_log/zipball/beaa4a7dfe3e9bdc00d3f4d079293a11dd084de3",
-                "reference": "beaa4a7dfe3e9bdc00d3f4d079293a11dd084de3",
+                "url": "https://api.github.com/repos/propeopleua/audit_log/zipball/0e888d40f42135a115490baff6aa562c86298ab0",
+                "reference": "0e888d40f42135a115490baff6aa562c86298ab0",
                 "shasum": ""
             },
             "require": {
@@ -3302,7 +3302,7 @@
                 "source": "https://github.com/propeopleua/audit_log/tree/1.x",
                 "issues": "https://github.com/propeopleua/audit_log/issues"
             },
-            "time": "2017-12-20T09:07:24+00:00"
+            "time": "2017-12-20T10:52:39+00:00"
         },
         {
             "name": "nikic/php-parser",
