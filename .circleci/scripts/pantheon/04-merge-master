@@ -11,7 +11,9 @@ if [[ $CIRCLE_BRANCH != "master" ]] ; then
 fi
 
 # Merge the multidev for the PR into the dev environment
-terminus -n build:env:merge "$TERMINUS_SITE.$TERMINUS_ENV" --yes
+#terminus -n build:env:merge "$TERMINUS_SITE.$TERMINUS_ENV" --yes
+
+terminus build-env:push-code "$TERMINUS_SITE.dev"
 
 # Re-run the site installation process
 terminus -n build:env:install "$TERMINUS_SITE.dev" pantheon --site-name="$TEST_SITE_NAME" --account-mail="$ADMIN_EMAIL" --site-mail="$ADMIN_EMAIL" --account-name="admin" --account-pass="$ADMIN_PASSWORD"
@@ -29,4 +31,4 @@ terminus -n build:env:install "$TERMINUS_SITE.dev" pantheon --site-name="$TEST_S
 
 # Delete old multidev environments associated with a PR that has been
 # merged or closed.
-terminus -n build:env:delete:pr "$TERMINUS_SITE" --yes
+#terminus -n build:env:delete:pr "$TERMINUS_SITE" --yes
