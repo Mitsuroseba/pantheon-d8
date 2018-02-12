@@ -41,18 +41,15 @@ class PropertiesFetcher {
   /**
    * Fetch properties.
    *
-   * @param array $project
-   * @param string $site_key
+   * @param $options
    * @return string
    */
-  public function fetchProperties() {
+  public function fetchProperties($options) {
     $data = NULL;
     try {
       $data = (string) $this->httpClient
         ->get($this::RESPONSE_URL, [
-          'query' => [
-            'from' => 'Ymd',
-          ],
+          'query' => $options,
         ])
         ->getBody();
       $data = $this->serializer->deserialize($data, ResultSet::class, 'json');

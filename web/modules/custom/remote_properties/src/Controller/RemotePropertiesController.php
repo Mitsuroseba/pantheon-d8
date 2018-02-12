@@ -3,8 +3,10 @@
 namespace Drupal\remote_properties\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
+use Drupal\remote_properties\Form\ExposedForm;
 use Drupal\remote_properties\PropertiesFetcher;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  */
@@ -36,29 +38,19 @@ class RemotePropertiesController extends ControllerBase {
   /**
    * Properties list.
    */
-  public function propertiesList() {
-    $this->propertiesFetcher->fetchProperties();
+  public function propertiesList(Request $request) {
+    $form = $this->formBuilder()->getForm('Drupal\remote_properties\Form\ExposedForm');
+
+    $options = [];
+    foreach (ExposedForm::FILTERS_MAP as $filter => $default) {
+      $options[$filter] = $request->get($filter) ?: $default;
+    }
+
     $build = [
       '#theme' => 'remote_properties_page',
+      '#result_set' => $this->propertiesFetcher->fetchProperties($options),
+      '#exposed' => $form,
     ];
-//todo
-    $build['#table'] = [
-      '#type' => 'table',
-//      '#header' => $this->buildHeader(),
-//      '#title' => $this->getTitle(),
-      '#rows' => [],
-      '#empty' => $this->t('There is no @label yet.', ['@label' => 'label']),
-      '#cache' => [
-//        'contexts' => $this->entityType->getListCacheContexts(),
-//        'tags' => $this->entityType->getListCacheTags(),
-      ],
-    ];
-//    foreach ($this->load() as $entity) {
-//      if ($row = $this->buildRow($entity)) {
-//        $build['#table']['#rows'][$entity->id()] = $row;
-//      }
-//    }
-
 
     return $build;
   }
