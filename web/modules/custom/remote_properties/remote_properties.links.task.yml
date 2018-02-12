@@ -1,0 +1,5 @@
+remote_properties.menu.list:
+  title: 'Remote properties'
+  route_name: remote_properties.list
+  base_route: system.admin_content
+  weight: 99

@@ -1,0 +1,6 @@
+remote_properties.list:
+  path: '/admin/content/remote-properties'
+  defaults:
+    _controller: '\Drupal\remote_properties\Controller\RemotePropertiesController::propertiesList'
+  requirements:
+    _permission: 'access properties'

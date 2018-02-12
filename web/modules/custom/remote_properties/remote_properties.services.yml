@@ -1,0 +1,8 @@
+services:
+  remote_properties.properties_fetcher:
+    class: Drupal\remote_properties\PropertiesFetcher
+    arguments: ['@http_client', '@serializer']
+  remote_properties.normalizer.remote_properties:
+    class: Drupal\remote_properties\Normalizer\PropertyNormalizer
+    tags:
+    - { name: normalizer, priority: 10 }
