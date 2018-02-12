@@ -23,12 +23,11 @@
         "drupal/console": "^1",
         "drupal/core": "^8",
         "drupal/deploy": "^1.0@beta",
-        "drupal/devel_generate": "^1.2",
-        "drupal/multiversion": "^1.0@beta",
         "drupal/simple_block": "^1.0@beta",
         "drush/drush": "~8",
-        "mitsuroseba/audit_log": "~1@dev",
+        "jms/serializer": "^1.11",
         "rvtraveller/qs-composer-installer": "^1.1",
+        "symfony/property-access": "^3.3",
         "webflo/drupal-core-strict": "^8"
     },
     "require-dev": {
