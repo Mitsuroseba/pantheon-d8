@@ -1,0 +1,13 @@
+<ul>
+  {% for result in results %}
+    <li>
+      {% include module_path ~ "/templates/remote-properties-list-item.html.twig"
+        with {
+          "title": result.getHeadLine(),
+          "country": result.getCountryName(),
+          "beds": result.getBeds(),
+        }
+      %}
+    </li>
+  {% endfor %}
+</ul>

@@ -11,9 +11,10 @@ function remote_properties_theme() {
   return [
     'remote_properties_page' => [
       'variables' => [
-        'content',
+        'module_path' => drupal_get_path('module', 'remote_properties'),
+        'result_set' => NULL,
+        'exposed' => NULL,
       ],
-      'template' => 'remote-properties-page',
     ],
   ];
 }

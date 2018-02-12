@@ -1,2 +1,7 @@
 <h1>{{ 'Remote properties'|t }}</h1>
-{{ table }}
+{{ exposed }}
+{% include module_path ~ "/templates/remote-properties-list.html.twig"
+  with {
+    "results": result_set.getResults(),
+  }
+%}
