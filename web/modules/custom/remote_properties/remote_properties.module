@@ -1,0 +1,19 @@
+<?php
+/**
+ * @file
+ * Hooks.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function remote_properties_theme() {
+  return [
+    'remote_properties_page' => [
+      'variables' => [
+        'content',
+      ],
+      'template' => 'remote-properties-page',
+    ],
+  ];
+}
